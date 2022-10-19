@@ -8,33 +8,25 @@
 
 ## Results:
 
-Logistic Regression with resampling:
+* Logistic Regression with resampling
 
- Random Oversampling
+| Resampling method | balanced accuracy | precision | recall
+| --- | --- | --- | --- |
+| Random Oversampling | 0.56 | 0.01  |    0.72|
+| SMOTE Oversampling | 0.69 |  0.01   |   0.62 |
+| Undersampling with Cluster Centroids | 0.40 | 0.01   |   0.69 |
+| SMOTEENN (Over and Under)sampling | 0.58 | 0.01    |  0.71|
 
- SMOTE Oversampling
+* Ensemble Learning models
 
- Undersampling with Cluster Centroids
-
- SMOTEENN (Over and Under)sampling
- 
-
-| fine, header | ok, ok, header |
-| --- | --- |
-| no header | minimalist table |
-| second line | second column |
-
-
-Balanced RandomForest
-
-Easy Ensemble
-
-balanced accuracy
-precision
-recall
+| Resampling method | balanced accuracy | precision | recall
+| --- | --- | --- | --- |
+| Balanced Random Forest | 0.89 |0.03   |   0.64|
+| Easy Ensemble | 0.90 | 0.05  |    0.93|
 
 
- Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. Use screenshots of your outputs to support your results.
+
+ Use screenshots of your outputs to support your results.
 
 ## Summary: 
 
