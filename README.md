@@ -50,7 +50,7 @@ really bad		| 7			| 94 |
 
 | balanced accuracy | precision | recall |
 | --- | --- | --- |
-| .96 | 0.05| 0.93 |
+| 0.96 | 0.05| 0.93 |
 
 
 | confusion matrix| labeled good	| labeled bad |
