@@ -18,8 +18,11 @@ Logistic Regression with resampling:
 
  SMOTEENN (Over and Under)sampling
  
-no header | minimalist table
-second line | second column
+
+| fine, header | ok, ok, header |
+| --- | --- |
+| no header | minimalist table |
+| second line | second column |
 
 
 Balanced RandomForest
