@@ -35,7 +35,7 @@
 
  The Easy Ensemble model performed strictly better than all others: it is better on every one of the three metrics. So there is no reason to use any of the other models with this data. Depending on one's goals, one might or might not want to use the Easy Ensemble model. Here is the confusion matrix for it:
 
-
+| | | |
 | --- | --- | --- |
 |			| labeled good	| labeled bad |
 really good	| 15398		| 1706 |
