@@ -8,6 +8,9 @@
 
 ## Results:
 
+ The data is extremely imbalanced: good loans outnumber bad ones by a factor of ~400. Therefore, simple models like the logistic regression require resampling to balance the training data; but more sophisticated models do not.  We tried four resampling methods with the logistic regression model, and two more sophisticated models. Here are the (balanced) accuracy, and the precision and recall of performance metrics for our models.
+
+
 * Logistic Regression with resampling
 
 | Resampling method | balanced accuracy | precision | recall
@@ -19,7 +22,7 @@
 
 * Ensemble Learning models
 
-| Resampling method | balanced accuracy | precision | recall
+| Learning Model | balanced accuracy | precision | recall
 | --- | --- | --- | --- |
 | Balanced Random Forest | 0.89 |0.03   |   0.64|
 | Easy Ensemble | 0.90 | 0.05  |    0.93|
@@ -30,6 +33,28 @@
 
 ## Summary: 
 
+ The Easy Ensemble model performed strictly better than all others: it is better on every one of the three metrics. So there is no reason to use any of the other models with this data. Depending on one's goals, one might or might not want to use the Easy Ensemble model. Here is the confusion matrix for it:
+
+
+| --- | --- | --- |
+|			| labeled good	| labeled bad |
+really good	| 15398		| 1706 |
+really bad		| 7			| 94 |
+
+
+ Pretending for a moment that our model could be used to accept or reject loan applications, it would be good for business, but may be bad for society. From the business perspective, 
+
+
+
+, that's the model to use if you use any of them. 
+
+
  Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
+
+
+
+It is also worth noting that the ensemble learning models are quite fast
+
+
 
 
